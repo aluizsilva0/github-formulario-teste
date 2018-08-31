@@ -28,7 +28,7 @@ if (isset($_POST["nome"]) && isset($_POST["email"]) && isset($_POST["cpf"]) && i
 		echo $html;
 	}
 
-//CASO NÃO FOI PASSADO OS DADOS PELO FORMULÁRIO REDIRECIONA PARA A PÁGINA DE CADASTRO(INDEX.PHP)
+//CASO NÃO FOI PASSADO OS DADOS PELO FORMULÁRIO REDIRECIONA PARA A PÁGINA DE CADASTRO(index.html)
 }else{
 	header("location: index.html");
 }
