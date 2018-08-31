@@ -19,7 +19,8 @@
 
    8- Abrir prompt de comando(CMD), acessar do projeto que se encontra no servidor do node e executar o comando node consultaBanco.js para executar o script.
    
-   https://github.com/aluizsilva0/github-formulario-teste/issues/2#issue-355995462
+   ![nodejs](https://user-images.githubusercontent.com/42844605/44917179-1055b580-ad0e-11e8-95c5-f170d24ca9c4.jpg)
+
  
    9- Ao executar o scipt abrir o navegador e acessar a url: localhost:3000/usuarios/id 
    
