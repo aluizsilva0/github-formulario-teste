@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Formulário Teste</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<div class="container"> 
+		<h1>Formulário Teste Site Frivasa</h1>
+		<form id="form1">
+			<table border="0">
+				<p class="msg" id="msg">Aviso: Campos Obrigatórios *</p>
+				<tr>
+					<td><b>Nome: * </b><br><br></td>
+					<td><input type="text" id="nome" class="campo-dados1" onblur="validarNome()" required title="Digite seu nome completo" placeholder="Digite seu nome completo"><br><br></td>
+				</tr>
+				<tr>
+					<td><b>E-mail: * </b><br><br></td>
+					<td><input type="email" id="email" class="campo-dados1" onblur="validarEmail()" required title="Digite seu endereço de e-mail" placeholder="Digite seu email"><br><br></td>
+				</tr>	
+				<tr>
+					<td><b>CPF: *</b><br><br></td>
+					<td><input type="text" id="cpf" required class="cpf" title="Digite seu CPF" maxlength="14" onkeyup="validarCpf()" onKeyPress="return SomenteNumero(event)" onblur="verificaCpf()" placeholder="Digite seu CPF"><br><br></td>
+				</tr>
+				<tr>
+					<td><b title="Data de Nascimento">DN: *<br><br></b></td>
+					<td><input type="date" id="data" name="data" required class="data" title="Informe sua Data de Nascimento"><br><br></td>
+				</tr>
+				<tr>
+					<td colspan="2" class="botao-enviar"><input type="submit" id="enviar" name="botao" class="botao" title="enviar cadastro"></td>
+					<td><input type="hidden" id="metodo" value="formulario-ajax"></td>
+				</tr>
+			</table><br>
+		</form>
+	</div>	
+
+	<!-- CÓDIGO JAVASCRIPT PARA VALIDAR OS CAMPOS DO FORMULÁRIO -->
+	<script type="text/javascript">
+		var qtdCaracter;
+
+		//FUNÇÃO PARA VALIDAR O CAMPO NOME DO FORMULÁRIO
+		function validarNome() {
+			var nome = form1.nome.value;
+			if (nome != "") {//VERIFICA SE O CAMPO NOME ESTÁ VAZIO
+				if(nome.length < 5){
+					document.getElementById('msg').innerHTML = 'Erro: Campo Nome Inválido!';	
+					form1.nome.focus();
+				}
+				else{
+					document.getElementById('msg').innerHTML = '*Campos Obrigatórios';			
+				}
+			}			
+		}	
+
+		//FUNÇÃO PARA VALIDAR O CAMPO DE E-MAIL
+		function validarEmail(){
+			var email = form1.email.value;//variável e-mail recebe a variável do campo e-mail 
+			var posicao = email.indexOf("@"); // variável posição recebe a posição que se encontra o caracter @
+			var ultimocaracter = email.charAt(email.length-1);// variável ultimo caracter recebe o ultimo caracter do e-mail
+			
+			if (email !="") {
+				//CHAMANDO A FUNÇÃO QUE VERIFICA A QUANTIDADE DE OCORENCIAS DO CARACTER @ EM UMA STRING(CAMPO EMAIL)
+				verificaCaracters();
+
+				if(email.indexOf("@") >= 0){//Verificando se existe o caracter @ no email
+					if (posicao >=1 & ultimocaracter != "@") {//verificando se o @ não é o ultimo caracter
+						if (qtdCaracter == 1) { //verificando a quantidade de vezes que o caracter @ apareceu no campo de email
+							document.getElementById('msg').innerHTML = 'Aviso: Campos Obrigatórios *';//Apresenta a mensagem padrão
+						}else{
+							document.getElementById('msg').innerHTML = 'Erro: Campo E-mail Inválido!';//Apresenta mensagem de erro no preenchimento do formulário
+							form1.email.focus();
+						}						
+					}else{
+						document.getElementById('msg').innerHTML = 'Erro: Campo E-mail Inválido!';
+						form1.email.focus();
+					}
+
+				} else{
+					document.getElementById('msg').innerHTML = 'Erro: Campo E-mail Inválido!';
+					form1.email.focus();
+				}
+			}	
+		}
+
+		//FUNÇÃO PARA VALIDAR O CPF
+		function validarCpf(){
+			//CHAMANDO A FUNÇÃO QUE COLOCAR MARCARA NO NO FORMULÁRIO.			
+			MascaraCpf();
+		}
+
+		//FUNÇÃO PARA INSERIR MÁSCARA NO CPF
+		function MascaraCpf(){
+			var cpf = form1.cpf.value;
+			if (cpf !="") {
+				if (cpf.length == 3 || cpf.length == 7) {
+					document.getElementById('cpf').value = cpf+'.';
+				}
+
+				if (cpf.length == 11) {
+					document.getElementById('cpf').value = cpf+'-';
+				}
+			}	
+		}
+
+		//FUNÇAO PARA QUE O CAMPO CPF SO ACEITE NÚMEROS.
+		function SomenteNumero(e){
+      		var tecla=(window.event)?event.keyCode:e.which;
+
+      		if((tecla > 47 && tecla < 58)) 
+      			return true;
+      		else{
+      		if (tecla != 8) 
+      			return false;
+      		else 
+      			return true;
+      		}
+      	}
+
+      	//VERIFICA SE A QUANTIDADE DE NÚMEROS INFORMADOS NO CPF ESTÁ CORRETO
+      	function verificaCpf(){
+      		var cpf = form1.cpf.value;
+
+      		if (cpf !="") {
+				if(cpf.length < 14){
+					document.getElementById('msg').innerHTML = 'Erro: CPF Inválido!';
+					form1.cpf.focus();	
+				}else{
+					document.getElementById('msg').innerHTML = 'Aviso: Campos Obrigatórios *';	
+				}
+			}	
+      	}
+
+		//FUNÇÃO PARA VERIFICA A QUANTIDADE DE OCORRENCIA DE UM CARACTER EM UMA STRING (NESSE CASO O CARACTER @)
+		function verificaCaracters(){
+			var enderecoEmail = form1.email.value;
+			var qtd = 0;
+
+			for (var i = 0; i < enderecoEmail.length; i++) {
+				if (enderecoEmail[i] == "@") {
+					qtd = qtd + 1;
+				}
+			}
+			qtdCaracter = qtd;
+		}
+	</script>
+
+	<!-- JAVASCRIPT-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/formulario.js"></script>
+	<!-- JAVASCRIPT-->
+
+</body>
+</html>

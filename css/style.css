@@ -1,0 +1,67 @@
+/* DOCUMENTO CSS */
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	text-align: center;
+	color: #fff;
+}
+
+.container{
+	background-color:#005A95; 
+	margin: auto;
+	width: 500px;
+}
+
+.msg{
+	color: #fff;
+	text-align: center;
+}
+
+table{
+	width: 100%;
+}
+
+input{
+	border-radius: 5px;
+	height: 20px;
+}
+
+b{
+	font-size: 20px;
+	margin-bottom: 30px;
+	color: #fff;
+	margin-left: 10px;
+}
+
+.campo-dados1{
+	width: 250px;
+}
+
+.cpf{
+	width: 150px;
+}
+
+.data{
+	width: 140px;
+}
+
+.botao{
+	width: 200px;
+	height: 30px;
+	color: #fff;
+	background-color:#005A95; 
+	border-radius: 5px;
+	font-size: 18px;
+}
+
+.botao:hover{
+	cursor: pointer;
+}
+
+.botao-enviar{
+	text-align: center;
+}
