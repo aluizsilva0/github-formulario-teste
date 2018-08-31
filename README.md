@@ -1,6 +1,6 @@
 # github-formulario-teste
 
-# 1- Criar o banco de dados executando os comandos que se encontram no banco_de_dados.sql
+# 1- Criar o banco de dados executando os comandos que se encontram no arquivo banco_de_dados.sql que criar o banco de dados chamado formularioteste
 # 2- Colocar a pasta do programa no servidor local, ex: c:/wamp/www/pasta do formulário de teste
 # 3- Após a criação do banco de dados e a inserção da pasta do programa no servidor local, o próximo passo é abrir o navegador e acessar o caminho so sistema.
 Ex: localhost/nome da pasta que está no servidor
