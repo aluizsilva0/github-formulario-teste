@@ -13,7 +13,7 @@
  
  6-Após o envio, os dados serão armazenados no banco de dados formularioteste na tabela usuários;
  
-# Consultar o banco de dados
+# Consultar o banco de dados:
  7- Copiar arquivo de consulta do banco de dados consultabanco.js para dentro do servidor node js
 
  8- Abrir prompt de comando(CMD), acessar do projeto que se encontra no servidor do node e executar o comando node consultaBanco.js para executar o script.
