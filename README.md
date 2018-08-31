@@ -4,8 +4,8 @@
    2- Colocar a pasta do programa no servidor local. se a pasta do projeto tiver o nome formularioteste o caminho da url será: C:/wamp/www/formularioteste; (caso seja usado o wampserver);
  
    3- Após a criação do banco de dados e a inserção da pasta do programa no servidor local, o próximo passo é abrir o navegador e acessar o caminho do sistema (URL).
-   URL:
-            localhost/www/nome da pasta que está no servidor;
+ 
+               localhost/www/nome da pasta que está no servidor;
  
 # Acessar o sistema
    4- Após acessar o caminho acima, será aberta a página principal do formulário (index.html);
