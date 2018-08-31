@@ -33,6 +33,6 @@
  2- A pasta css possui o arquivo de estilo do formulário.
  
  3- O diretório js contém o formulário.js => Jquery que pega os dados do form html e passar para o arquivo de cadastro do PHP.
-   Possui também o arqruivo valida-formulario.js
+   Possui também o arqruivo validar-formulario.js, que contém os códigos em javascript para validação dos campos do formulário.
  
  
