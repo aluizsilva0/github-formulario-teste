@@ -14,16 +14,18 @@
  6-Após o envio, os dados serão armazenados no banco de dados formularioteste na tabela usuários;
  
 # Consultar o banco de dados
- 7- Abrir promptde comando(CMD), acessar do projeto que se encontra no servidor local.
- 
- 8- ao acessar a pasta do projeto executar o script 
- 
- 
- Após iniciar o servidor nodejs abrir o navegador e acessar a url: localhost:3000/usuarios/e aqui digitar um ID qualquer.
- Exemplo se existe um usuário com id = 3 no banco de dados, a url de consulta fica: localhost:3000/usuarios/3.
+ 7- Copiar arquivo de consulta do banco de dados consultabanco.js para dentro do servidor node js
 
-# OBS SOBRE O PROJETO
+ 8- Abrir prompt de comando(CMD), acessar do projeto que se encontra no servidor do node e executar o comando node consultaBanco.js para executar o script.
+ 
+ 9- Ao executar o scipt abrir o navegador e acessar a url: localhost:3000/usuarios/id 
+ # OBS: 
+        ao acessar a url após /usuarios o campo id deve ser passado como um parametro ou seja um numero de id que está cadastrado no banco de dados, caso contrário a consulta não retornará nenhum cadastro.
+
+# OBSERVAÇÕES SOBRE O PROJETO
  A pasta controller contém o arquivo conexao.php que possui as configurações do banco de dados(caminho, usuário e senha, nome do banco)
  possui também o arquivo cadastrar-dados-bd-php que realiza a inserção do dados no banco de dados.
+ 
  A pasta css é para estilizar o formulário
+ 
  O diretório JS contém o formulário.js => Jquery que pega os dados do form html e passar para o arquivo de cadastro do PHP.
