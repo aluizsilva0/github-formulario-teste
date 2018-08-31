@@ -28,9 +28,11 @@
    caso algum módulo não foi configurado, será necessário a configuração.
 
 # Informações sobre o projeto
- A pasta controller contém o arquivo conexao.php que possui as configurações do banco de dados(caminho, usuário e senha, nome do banco)
- possui também o arquivo cadastrar-dados-bd-php que realiza a inserção do dados no banco de dados.
+ 1- A pasta controller contém o arquivo conexao.php que possui as configurações do banco de dados(caminho, usuário e senha, nome do banco). A pasta possui também o arquivo cadastrar-dados-bd-php que realiza a inserção do dados no banco de dados.
  
- A pasta css é para estilizar o formulário
+ 2- A pasta css possui o arquivo de estilo do formulário.
  
- O diretório JS contém o formulário.js => Jquery que pega os dados do form html e passar para o arquivo de cadastro do PHP.
+ 3- O diretório js contém o formulário.js => Jquery que pega os dados do form html e passar para o arquivo de cadastro do PHP.
+   Possui também o arqruivo valida-formulario.js
+ 
+ 
