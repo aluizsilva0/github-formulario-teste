@@ -26,6 +26,8 @@
    
    2- O exemplo de consulta acima só irá funcionar com o servidor node já configurado com os módulos de rotas, etc..
    caso algum módulo não foi configurado, será necessário a configuração.
+   
+   
 
 # Informações sobre o projeto
  1- A pasta controller contém o arquivo conexao.php que possui as configurações do banco de dados(caminho, usuário e senha, nome do banco). A pasta possui também o arquivo cadastrar-dados-bd-php que realiza a inserção do dados no banco de dados.
