@@ -1,5 +1,4 @@
 //CÓDIGO JAVASCRIPT PARA VALIDAR OS CAMPOS DO FORMULÁRIO
-	<script type="text/javascript">
 		var qtdCaracter;
 		//FUNÇÃO PARA VALIDAR O CAMPO NOME DO FORMULÁRIO
 		function validarNome() {
