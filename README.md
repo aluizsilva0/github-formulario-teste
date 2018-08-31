@@ -18,6 +18,8 @@
    7- Copiar arquivo de consulta do banco de dados consultabanco.js para dentro do servidor node js
 
    8- Abrir prompt de comando(CMD), acessar do projeto que se encontra no servidor do node e executar o comando node consultaBanco.js para executar o script.
+   
+   https://github.com/aluizsilva0/github-formulario-teste/issues/2#issue-355995462
  
    9- Ao executar o scipt abrir o navegador e acessar a url: localhost:3000/usuarios/id 
    
