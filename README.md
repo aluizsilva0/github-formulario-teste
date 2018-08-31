@@ -7,12 +7,18 @@
  3- Após a criação do banco de dados e a inserção da pasta do programa no servidor local, o próximo passo é abrir o navegador e acessar o caminho do sistema (URL).
  Ex: localhost/www/nome da pasta que está no servidor;
  
- 4- Após acessar o caminho acima, será aberta a página principal do formulário(index.html);
+# Acessar o sistema e realizar um cadastro de formulário
+
+ 4- Após acessar o caminho acima, será aberta a página principal do formulário (index.html);
  
  5-Preencher o formulário e enviar os dados.
- 6-Após o envio, os dados serão armazenados no banco de dados.
- 7-Para realizar a consulta pelo nodejs, será necessário abrir o nodejs acessar a pasta do servidor e executar o arquivo consultaBanco.js
- para acessar o node => executar o prompt de comando(CMD) acessar a pasta do projeto e executar o arquivo consultaBanco.js através do comando node consultaBanco.js
+ 
+ 6-Após o envio, os dados serão armazenados no banco de dados formularioteste na tabela usuários;
+ 
+# Consultar o banco de dados através de um script feito em NodeJS
+ 
+ 
+ 
  Após iniciar o servidor nodejs abrir o navegador e acessar a url: localhost:3000/usuarios/e aqui digitar um ID qualquer.
  Exemplo se existe um usuário com id = 3 no banco de dados, a url de consulta fica: localhost:3000/usuarios/3.
 
