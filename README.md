@@ -20,7 +20,8 @@
    8- Abrir prompt de comando(CMD), acessar do projeto que se encontra no servidor do node e executar o comando node consultaBanco.js para executar o script.
    
    ![nodejs](https://user-images.githubusercontent.com/42844605/44917179-1055b580-ad0e-11e8-95c5-f170d24ca9c4.jpg)
-
+   
+   Retorno da Consulta ao banco de dados
    ![exemploconsulta](https://user-images.githubusercontent.com/42844605/44916987-71c95480-ad0d-11e8-876d-a74f967626ea.jpg)
 
  
