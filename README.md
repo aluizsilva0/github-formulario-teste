@@ -20,10 +20,14 @@
    8- Abrir prompt de comando(CMD), acessar do projeto que se encontra no servidor do node e executar o comando node consultaBanco.js para executar o script.
  
    9- Ao executar o scipt abrir o navegador e acessar a url: localhost:3000/usuarios/id 
- # OBS: 
-   ao acessar a url após /usuarios o campo id deve ser passado como um parametro ou seja um numero de id que está cadastrado no banco de dados, caso contrário a consulta não retornará nenhum cadastro.
+   
+ # OBSERVAÇÕES IMPORTANTES: 
+   1- ao acessar a url após /usuarios o campo id deve ser passado como um parametro ou seja um numero de id que está cadastrado no banco de dados, caso contrário a consulta não retornará nenhum cadastro.
+   
+   2- O exemplo de consulta acima só irá funcionar com o servidor node já configurado com os módulos de rotas, etc..
+   caso algum módulo não foi configurado, será necessário a configuração.
 
-# OBSERVAÇÕES SOBRE O PROJETO
+# Informações sobre o projeto
  A pasta controller contém o arquivo conexao.php que possui as configurações do banco de dados(caminho, usuário e senha, nome do banco)
  possui também o arquivo cadastrar-dados-bd-php que realiza a inserção do dados no banco de dados.
  
