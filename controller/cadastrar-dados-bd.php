@@ -32,22 +32,4 @@ if (isset($_POST["nome"]) && isset($_POST["email"]) && isset($_POST["cpf"]) && i
 }else{
 	header("location: index.html");
 }
-
-/*
-if (strcasecmp('formulario-ajax', $_POST['metodo']) == 0) {
-
-	$html = 'Nome: '.$_POST['nome'];
-	$html .= "\n";
-	$html .= 'Email: '.$_POST['email'];
-	$html .= "\n";
-	$html .= 'CPF: '.$_POST['cpf'];
-	$html .= "\n";
-	$html .= 'Data: '.$_POST['data'];
-	$html .= "\n";
-	$html .= "\n\n Obrigado pelo cadastro.";
-	
-	echo $html;
-}
-*/
-
 ?>
